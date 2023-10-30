@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataCrafted-Turning Numbers Into Knowledge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="dashboard/dashboard.html">
+                <img src="../img/logo.png" class="logo" alt="logo">
+            </a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQs</a>
+        </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+
+    <div class="background"></div>
+
+    <section id="main">
+        <div class="container">
+        <div class="content">
+
+            <div class="text-sci">
+                <h2>DATACRAFTED <br><span>Turning Numbers Into Knowledge!</span></h2>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sed pariatur, iusto ab eius exercitationem </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login -->
+
+        <form id="login-form">
+
+            <h2>Login</h2><br>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label><br>
+                <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label><br>
+                <input type="password" class="form-control" id="login-password" placeholder="Enter password">
+            </div>
+            <br>
+            <a href="#">Forget Password?</a><br><br>
+            <button type="button" id="login-button">Login</button>
+            <p class="h">Don't have an account?</p>
+
+        </form>
+
+        <!-- Signup -->
+
+        <form id="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+                <div class="form-column-left">
+                    <h3 class="sign">Personal Details</h3><br>
+                    <label for="name">Name:</label><br>
+                    <input type="text" class="signupid" id="name" name="myName"><br>
+
+                    <label for="date-of-birth">Date of Birth:</label><br>
+                    <input type="dob" class="signupid" id="dob" name="Dob"><br>
+
+                    <label for="signup-email">Email:</label><br>
+                    <input type="email" class="signupid" id="signup-email" name="signup-email"><br>
+
+                    <label for="signup-password">Password:</label><br>
+                    <input type="password" class="signupid" id="signup-password" name="signup-password"><br>
+
+                    <label for="password">Re-Enter Password:</label><br>
+                    <input type="password" class="signupid" id="re-enter-password" name="password"><br>
+                    
+                    <label for="phone">Phone:</label><br>
+                    <input type="phone" class="signupid" id="phone" name="phone"><br>
+
+                    <label for="company">Company:</label><br>
+                    <input type="text" class="signupid" id="company" name="company"><br>
+                    
+                    <label for="desigination">Desigination:</label><br>
+                    <input type="text" class="signupid" id="desigination" name="desigination"><br>
+
+                    <label for="industry">Industry:</label><br>
+                    <input type="text" class="signupid" id="industry" name="industry"><br>
+                    
+                    <label for="security-question">Security Question:</label><br>
+                    <input type="text" class="signupid" id="security-que" name="security-que"><br>
+                </div>
+                <div class="form-column-right">
+                    <h3 class="sign">BUSINESS DETAILS</h3><br>
+            
+                    <label for="business-name">Business Name:</label><br>
+                    <input type="text" class="signupid" id="business-name" name="business-name"><br>
+            
+                    <label for="business-goal">Business Goal:</label><br>
+                    <input type="text" class="signupid" id="business-goal" name="business-goal"><br>
+            
+                    <label for="target">Target:</label><br>
+                    <input type="text" class="signupid" id="target" name="target"><br>
+            
+                    <label for="type">Type:</label><br>
+                    <input type="text" class="signupid" id="type" name="type"><br>
+            
+                    <label for="field">Field:</label><br>
+                    <input type="text" class="signupid" id="field" name="field"><br>
+                </div>
+            <button id="signup-button" class="signup-bt">Sign Up</button><br>
+            <button type="reset" id="reset" class="signup-bt">Reset Now</button>
+            <h5 class="h">Already have an account?</h5><br>
+        
+        </form>
+
+            <button id="show-signup-button">Sign Up</button>
+            <button id="show-login-button" style="display: none;">Login</button>
+
+    </section>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
