@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/login.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/Templates/index.html">
+                    <img src="/static/img/logo1.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/Templates/dashboard.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+            <div class="user-actions">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button><i class='bx bx-search'></i></button>
+                </div>
+                <a href="/Templates/login.html">
+                    <button id="login-button">Login</button>
+                </a>
+
+                <a href="/Templates/signup.html">
+                    <button id="signup-button">Sign Up</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login -->
+
+    <form id="login-form">
+        {% csrf_token %}
+        <div id="form-logo">
+            <img src="/static/img/logo1.png" alt="logo">
+        </div>
+        <div class="login-container">
+            <h2>Login</h2><br>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label><br>
+                <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label><br>
+                <input type="password" class="form-control" id="login-password" placeholder="Enter password">
+            </div>
+            <br>
+            <a href="#">Forget Password?</a><br>
+            <button type="button" id="login-button">Login</button>
+            <a href="/Templates/signup.html">
+                <h5 class="h">Create an Account</h5><br>
+            </a>
+        </div>
+
+    </form>
+
+</html>
