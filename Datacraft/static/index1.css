@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFEFBA;
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+    color:  #333;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:  #333;
+    font-weight: bold;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #444;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+input {
+    border: none;
+    background: none;
+    color: #fff;
+    width: 200px;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+#myprofile{
+    border: none;
+    font-size: 2vw;
+    color: #007BFF;
+
+}
+
+#myprofile :hover{
+    /* border: 1px solid #333; */
+    color: #0056b3;
+    /* border-radius: 50%; */
+}
+
+button i {
+    color: #333;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.text-sci{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    width: 34vw;
+    height: 30vw;
+    /* margin: 2vw; */
+    padding: 2vw;
+    /* transform: translate(-50%, -50%); */
+    color: #333;
+    /* border: 2px solid red; */
+    z-index: 1;
+}
+
+.text-sci h2{
+    font-size: 4vw;
+}
+
+.text-sci h2 span{
+    font-size: 2vw;
+}
+
+.social-icons {
+    position: relative;
+    top: 2vw;
+    display: flex;
+    gap: 10px;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333; /* Change to the desired color for normal state */
+}
+
+.social-icons a i {
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Style for hover state */
+.social-icons a:hover {
+    color: orange; /* Change to the desired color for hover state, e.g., LinkedIn's blue color */
+}
+
+.text-sci p{
+    font-size: 1vw;
+}
+
+.photo{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2vw;
+    padding: 2vw;
+}
+
+.photo img{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* About section */
+
+#about {
+    padding: 50px 0;
+    /* text-align: center; */
+}
+
+.about-content {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-content p:nth-child(3),
+p:nth-child(5),
+p:nth-child(9) {
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Features div */
+
+#features{
+    display: block;
+    /* background: #FFEFBA;
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); */
+    color: #333;
+}
+
+
+#features h1{
+    margin-top: 4vw;
+    padding-top: 2vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+/* Dashboard div */
+
+.container1{
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard h2{
+    margin-left: 2vw;
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+.content1{
+    margin: 2vw;
+}
+
+.content1 a{
+    text-decoration: none;
+    color: #333;
+}
+
+.content1 a:hover{
+    color:orange;
+}
+
+.container1 .dashboard-image{
+    margin: 2vw;
+}
+
+.container1 .content1 p{
+    font-size: 1.5vw;
+}
+
+.container1 .content1 li{
+    font-size: 1.5vw;
+}
+
+.container1 .dashboard-image img{
+    box-sizing: border-box;
+    width: 25vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 10px rgb(0 0 0 / 33%);
+    transition: width 0.2s;
+    transition-timing-function: ease;
+}
+
+.container1 .dashboard-image img:hover{
+    width: 26vw;
+}
+
+/* Analytics div */
+
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+
+.analytics h2{
+    margin-left: 2vw;
+    font-size: 2vw;
+}
+
+.content2{
+    margin: 2vw;
+}
+
+.container2 .analytics-image{
+    /* border: 2px solid brown; */
+    margin: 2vw;
+}
+
+.container2 .content2 p{
+    font-size: 1.5vw;
+}
+
+.container2 .content2 li{
+    font-size: 1.5vw;
+}
+
+.container2 .analytics-image img{
+    box-sizing: border-box;
+    width: 25vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 10px rgb(0 0 0 / 33%);
+    transition: width 0.2s;
+    transition-timing-function: ease;
+}
+
+.container2 .analytics-image img:hover{
+    width: 26vw;
+}
+
+/* Reports div */
+
+.container3{
+    display: flex;
+    flex-direction: row;
+}
+
+.reports h2{
+    margin-left: 2vw;
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+.content3{
+    margin: 2vw;
+}
+
+.content3 a{
+    text-decoration: none;
+    color: #333;
+}
+
+.content3 a:hover{
+    color:orange;
+}
+
+
+.container3 .reports-image{
+    /* border: 2px solid brown; */
+    margin: 2vw;
+}
+
+.container3 .content3 p{
+    font-size: 1.5vw;
+}
+
+.container3 .content3 li{
+    font-size: 1.5vw;
+}
+
+.container3 .reports-image img{
+    box-sizing: border-box;
+    width: 25vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 10px rgb(0 0 0 / 33%);
+    transition: width 0.2s;
+    transition-timing-function: ease;
+}
+
+.container3 .reports-image img:hover{
+    width: 26vw;
+}
+
+
+
+/* Pricing div */
+
+#pricing{
+    display: block;
+    /* background: #FFEFBA;
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); */
+}
+
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* justify-content: center; */
+}
+
+#pricing h1{
+    margin-top: 0;
+    padding-top: 2vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.with{
+    text-align: center;
+    border: none;
+    border-radius: 2vw;
+    padding: 1vw;
+    margin-bottom: 4vw;
+    background-color: rgb(228 130 3 / 7%);
+    box-shadow: 4px 5px 13px 7px rgba(0, 0, 0, 0.1);
+}
+
+.without{
+    text-align: center;
+    border: none;
+    border-radius: 2vw;
+    padding: 1vw;
+    margin-bottom: 4vw;
+    background-color: rgb(228 130 3 / 7%);
+    box-shadow: 4px 5px 13px 7px rgba(0, 0, 0, 0.1);
+
+}
+
+/* .with img{
+    width: 15vw;
+}
+
+.without img{
+    width: 15vw;
+} */
+
+/* FAQs div */
+   
+#faqs{
+    display: block;
+    /* background: #FFEFBA;
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); */
+    /* margin-bottom: 2vw; */
+}
+
+#faqs h1{
+    margin-top: 0;
+    padding-top: 2vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.qa{
+    margin-left: 2vw;
+    padding-bottom: 4vw;
+}
+
+footer{
+    color: #333;
+    padding-bottom: 4vw;
+    text-align: center;
+}
+
+.footer h3{
+    margin-top: 0;
+    padding-top: 2vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.footer h4{
+    margin-top: 0;
+    padding-top: 2vw;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.masters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.icons{
+    text-decoration: none;
+    color: #333;
+}
+
+.icons:hover{
+    color: orange;
+}
+.icons i{
+    font-size: 24px;
+}
+
+.us{
+    padding: 2vw;
+    border-radius: 1vw;
+    box-shadow: 0 0 10px rgb(0 0 0 / 33%);
+}
+
+#master-photo{
+    width: 5vw;
+    border-radius: 50%;
+}
+
+/* Add this to your existing CSS */
+.gmail-popup {
+    display: none;
+    position: absolute;
+    /* background-color: #fff; */
+    padding: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#popgmail:hover .gmail-popup {
+    display: block;
+}
+
+
+
+/* Responsive */
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .text-sci {
+        top: 10%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .photo {
+        justify-content: center;
+    }
+
+    .text-sci h2 {
+        font-size: 8vw;
+    }
+
+    .text-sci h2 span {
+        font-size: 4vw;
+    }
+
+    .social-icons {
+        top: 1vw;
+    }
+
+    .photo img {
+        width: 80%;
+    }
+
+    .container1 .dashboard-image img,
+    .container2 .analytics-image img,
+    .container3 .reports-image img {
+        width: 80%;
+    }
+}
+
+/* Adjustments for very small screens */
+@media only screen and (max-width: 480px) {
+    .text-sci {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .text-sci h2 {
+        font-size: 10vw;
+    }
+
+    .text-sci h2 span {
+        font-size: 5vw;
+    }
+
+    .social-icons {
+        top: 0.5vw;
+    }
+
+    .photo img {
+        width: 100%;
+    }
+
+    .container1 .dashboard-image img,
+    .container2 .analytics-image img,
+    .container3 .reports-image img {
+        width: 100%;
+    }
+}
+
+

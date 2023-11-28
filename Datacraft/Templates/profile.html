@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/profile.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>DATACRAFTED - My Profile</title>
+</head>
+
+<body>
+    <div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="/static/img/logo1.png" alt="Logo">
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <div class="user">
+                <div class="dropdown">
+                    <div class="dropbtn" id="userIcon">
+                        <i class='bx bxs-user-circle'></i>
+                    </div>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a href="{%  url 'profile' %}">My Profile</a>
+                        <a href="{%  url 'dashboard' %}">Dashboard</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<main class="profile-container">
+    <section class="profile-details">
+        <div class="profile-photo">
+            <img src="/static/img/sam.png" alt="My Photo">
+        </div>
+        <div class="user-info">
+            <h1>Your Name</h1>
+            <p>Email: your.email@example.com</p>
+            <p>Location: Your City, Country</p>
+        </div>
+    </section>
+
+    <section class="professional-info">
+        <h2>Professional Information</h2>
+        <p>Job Title: Your Job Title</p>
+        <p>Company/Organization: Your Company</p>
+        <p>Industry: Your Industry</p>
+    </section>
+
+    <section class="user-stats">
+        <h2>Statistics</h2>
+        <ul>
+            <li>Total Transactions: 100</li>
+            <li>Successful Transactions: 90</li>
+            <li>Failed Transactions: 10</li>
+        </ul>
+    </section>
+
+    <section class="preferences">
+        <h2>Preferences</h2>
+        <p>Theme Preferences: Light Mode</p>
+        <p>Notification Preferences: Enabled</p>
+    </section>
+
+    <section class="security-settings">
+        <h2>Security Settings</h2>
+        <p>Change Password: <a href="#">Change Password</a></p>
+        <p>Two-Factor Authentication: Enabled</p>
+    </section>
+
+    <section class="linked-accounts">
+        <h2>Linked Accounts</h2>
+        <p>Social Media Profiles: <a href="#">Linked Accounts</a></p>
+        <p>Integration with other platforms: <a href="#">Linked Platforms</a></p>
+    </section>
+
+    <section class="billing-info">
+        <h2>Billing and Subscription Information</h2>
+        <p>Subscription Status: Active</p>
+        <p>Next Billing Date: DD/MM/YYYY</p>
+    </section>
+
+    <section class="user-history">
+        <h2>User History</h2>
+        <p>History of actions or transactions performed on the platform.</p>
+    </section>
+
+    <section class="additional-details">
+        <h2>Additional Details</h2>
+        <p>Any additional details that are relevant to your platform or the services you provide.</p>
+    </section>
+
+    <section class="settings">
+        <h2>Settings</h2>
+        <p>Allow users to customize certain settings, such as language preferences or dashboard layout.</p>
+    </section>
+</main>
+
+    <script src="/static/js/profile.js"></script>
+</body>
+
+</html>
