@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/forgot.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Forgot Password</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="/static/img/logo1.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="user-actions">
+                <a href="{%  url 'dashboard' %}">
+                    <div id="myprofile">
+                        <i class='bx bxs-home'></i>
+                    </div>
+                </a>
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button><i class='bx bx-search'></i></button>
+                </div>
+                <a href="/login">
+                    <button id="login-button">Login</button>
+                </a>
+
+                <a href="/signup">
+                    <button id="signup-button">Sign Up</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Forgot Password Form -->
+
+    <form id="forgotPasswordForm">
+        <div id="form-logo">
+            <img src="/static/img/logo1.png" alt="logo">
+        </div>
+        <div class="forgot-container">
+            <h2 id="form-heading">Forgot Password</h2><br>
+
+            <div class="form-group">
+                <label for="forgot-email">Email address</label><br>
+                <input type="email" class="form-control" id="forgot-email" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+            </div>
+            <br>
+            <button type="submit" id="forgot-button" onclick="submitForm()">Submit</button>
+            <p id="message" class="hidden"></p>
+            <a href="{%  url 'login' %}">
+                <h5 class="h">Remembered your password? Login</h5><br>
+            </a>
+        </div>
+    </form>
+
+
+    <script src="/static/js/forgot.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+ 
+ 
+   <link rel="stylesheet" href="/static/index1.css">
+    <!-- <link rel="stylesheet" href="chart.css"> -->
+    <!-- <link rel="stylesheet" href="dark.css"> -->
+    <!-- <link rel="stylesheet" href="/css/hourglass.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <title>DATACRAFTED - Turning Numbers Into Knowledge</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="/static/img/logo1.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+            <div class="user-actions">
+
+                <!-- <button id="mode-toggle">Toggle Mode</button> -->
+                {%if user.is_authenticated%}
+                <a href="/dashboard">
+                    <div id="myprofile">
+                        <i class='bx bxs-home'></i>
+                    </div>
+                </a>
+                {%endif%}
+
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button><i class='bx bx-search'></i></button>
+                </div>
+                {%if user.is_authenticated%}
+                    <a href="/logout">
+                        <button id="login-button">logout</button>
+                    </a>
+                {% else %}
+
+                    <a href="/login">
+                        <button id="login-button">Login</button>
+                    </a>
+                    
+                    <a href="/signup">
+                        <button id="signup-button">Sign Up</button>
+                    </a>
+
+                {% endif %}
+                
+            </div>
+        </nav>
+    </header>
+
+    {% if messages %}
+
+    {% for msg in messages %}
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{ msg }}</strong> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+        
+    {% endfor %}
+
+    {% endif %}
+
+
+
+
+    <section id="main">
+        <section id="home">
+            <div class="content">
+
+                <div class="text-sci">
+                    <h2>DATACRAFTED <br><span>Turning Numbers Into Knowledge!</span></h2>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sed pariatur, iusto ab eius exercitationem </p> -->
+                    <div class="social-icons">
+                        <a href="#"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                        <a href="#"><i class="bx bxl-instagram"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="/static/img/img.png" alt="img">
+                </div>
+            </div>
+        </section>  
+        
+        <hr>
+
+        <section id="about">
+            <div class="about-content">
+                <h1>About DataCrafted</h1>
+    
+                <p>Welcome to DataCrafted, where we transform raw data into actionable insights, empowering businesses to make informed decisions and achieve their goals. At DataCrafted, we understand the significance of harnessing the power of data in today's dynamic business environment.</p>
+    
+                <p>Our Mission:</p>
+                <p>At the core of our mission is the commitment to help businesses unlock the full potential of their data. We believe that data is a valuable asset that, when analyzed strategically, can drive innovation, improve efficiency, and fuel business growth.</p>
+    
+                <p>What Sets Us Apart:</p>
+                <p> - Comprehensive Analytics: DataCrafted provides a robust analytics platform equipped with powerful tools for data visualization, forecasting, and comparative analysis.</p>
+                <p> - User-Friendly Dashboard: Navigate through your data effortlessly with our intuitive dashboard, tailored to meet the specific needs of your organization.</p>
+                <p> - Security First: We prioritize the security of your data. Our platform adheres to industry standards, ensuring that your information is handled with the utmost care and confidentiality.</p>
+    
+                <p>How We Can Help You:</p>
+                <p>Whether you are a startup aiming to gain a competitive edge or an established enterprise seeking to optimize operations, DataCrafted is your strategic partner. Our analytics tools empower you to:</p>
+                <ul>
+                    <li>Identify Key Performance Indicators (KPIs) crucial for your success.</li>
+                    <li>Visualize complex data sets for better understanding and decision-making.</li>
+                    <li>Utilize forecasting tools to anticipate trends and plan for the future.</li>
+                    <li>Receive alerts and notifications to stay informed in real-time.</li>
+                    <li>Conduct comparative analysis for insightful benchmarking.</li>
+                </ul>
+    
+                <p>Join us on the journey of turning numbers into knowledge. Let DataCrafted be your partner in navigating the data landscape and transforming your business into a data-driven powerhouse.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Features Section -->
+
+        <section id="features">
+            <h1>Features</h1>
+
+            <div class="dashboard">
+                <h2>Dashboard</h2>
+                <div class="container1">
+                    <div class="content1">
+                        <p>The features which are included in our <a href="/index">datacrafted</a> dashboard are align with the specific needs and goals of your organization. Here are some common features and elements.</p>
+                        <ul>
+                            <li>Key Performance Indicators (KPIs)</li>
+                            <li>Data Visualization</li>
+                            <li>Forcasting Tools</li>
+                            <li>Alerts and Notifications</li>
+                            <li>Comparative Analysis</li>
+                        </ul>
+                    </div>
+    
+                    <div class="dashboard-image">
+                        <img src="/static/img/bg3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analytics">
+                <h2>Analytics</h2>
+                <div class="container2">
+                    <div class="analytics-image">
+                        <img src="/static/img/bg2.jpg" alt="">
+                    </div>
+    
+                    <div class="content2">
+                        <p>Analytics refers to the systematic analysis of data or statistics to uncover meaningful patterns, correlations, and insights. It involves the use of various techniques and tools to examine data, draw conclusions, and support decision-making processes. Analytics can be applied in various field including business, finance and more.</p>
+                        <ul>
+                            <li>Inventory Turnover Rate</li>
+                            <li>Sales Conversion Rate</li>
+                            <li>Stockout Analysis</li>
+                            <li>Average Order Value (AOV)</li>
+                            <li>Forecast Accuracy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reports">
+                <h2>Reports</h2>
+                <div class="container3">
+                    <div class="content3">
+                        <p>A report is a structured document that presents information, analysis, and insights related to a specific aspect of business operations. Reports created by <a href="../index.html">datacrafted</a> serve as valuable tools for decision-makers, helping them understand complex information and make informed choices.</p>
+                    </div>
+    
+                    <div class="reports-image">
+                        <img src="/static/img/reports.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <hr>
+        <!-- pricing section -->
+
+        <section id="pricing">
+            <h1>Pricing</h1>
+            <div class="price">
+                <div class="with">
+                    <h2>Analytics</h2>
+                    <p><i> "Empowering Your Business with Insightful Analytics <br> - No Crystal Ball Needed!" </i></p>
+                    <img src="/static/img/with.gif" alt="with">
+                    <!-- <video src="/img/with.mp4"></video> -->
+                </div>
+                
+                <div class="without">
+                    <h2>Analytics With Forecast</h2>
+                    <p><i> "Unlocking Future Success: Analytics with Precision <br> Forcasting for Your Business Journey!" </i></p>
+                    <img src="/static/img/without.gif" alt="without">
+                    <!-- <video src="/img/without.mp4"></video> -->
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="faqs">
+            <h1>FAQs</h1>
+            <div class="qa">
+                <p><Q>What is DataCrafted?</Q>
+                <br><i>DataCrafted involves the use of data analysis tools and techniques to make informed business decisions.</i></p>
+    
+                <p><q>How can DataCrafted benefit my company?</q>
+                <br><i>It helps in uncovering insights, identifying trends, and making data-driven decisions to enhance efficiency and profitability.</i></p>
+    
+                <p><q>What types of data can be analyzed using DataCrafted?</q>
+                <br><i>DataCrafted can analyze various types of data, including financial, operational, customer, and market data.</i></p>
+    
+                <p><q>Is my data secure when using your analytics platform?</q>
+                <br><i>Yes, we prioritize data security and implement measures to protect your information. Our platform complies with industry standards.</i></p>
+    
+                <p><q>What sets your DataCrafted platform apart from others?</q>
+                <br><i>Our platform offers advanced analytics tools, user-friendly interfaces, and customizable features to meet the specific needs of your business.</i></p>
+    
+                <p><q>Do I need a technical background to use your analytics tools?</q>
+                <br><i>No, our tools are designed with user-friendliness in mind. While a basic understanding of analytics is beneficial, you don't need an extensive technical background.</i></p>
+    
+                <p><q>Can your analytics tools integrate with other business applications?</q>
+                <br><i>Yes, our platform supports integration with various business applications to streamline your workflow and enhance overall efficiency.</i></p>
+    
+                <p><q>How quickly can I expect to see results from using your analytics platform?</q>
+                <br><i>The timeframe for results varies based on your business goals and the complexity of your data. However, may users experience positive outcomes relatively quickly.</i></p>
+            </div>
+        </section>
+    </section>
+
+    <hr>
+
+    <footer class="footer">
+        <h3>Contact Us</h3>
+        <a class="icons" href="#"><i class="bx bxl-instagram"></i></a>
+        <a class="icons" href="#"><i class="bx bxl-gmail"></i></a>
+        <h4>Web Masters</h4>
+        <div class="masters">
+            <div class="us">
+                <img id="master-photo" src="/static/img/sam.png" alt="photo">
+                <h5>Sameer Hasan</h5>
+                <a class="icons" href="https://www.instagram.com/the.sam._/"><i class="bx bxl-instagram"></i></a>
+                <a class="icons" id="popgmail"><i class="bx bxl-gmail"></i></a>
+                <div class="gmail-popup" id="gmail-popup">sameerhasanwork1@gmail.com</div>
+
+            </div>
+
+            <div class="us">
+                <img id="master-photo" src="/static/img/sam.png" alt="photo">
+                <h5>Rohan Bhargava</h5>
+                <a class="icons" href="#"><i class="bx bxl-instagram"></i></a>
+                <a class="icons" href="#"><i class="bx bxl-gmail"></i></a>
+            </div>
+
+            <div class="us">
+                <img id="master-photo" src="/static/img/sam.png" alt="photo">
+                <h5>Rudra Shrivastav</h5>
+                <a class="icons" href="#"><i class="bx bxl-instagram"></i></a>
+                <a class="icons" href="#"><i class="bx bxl-gmail"></i></a>
+            </div>
+        </div>
+    </footer>
+<!-- ------------------------------------dark mode----------------------------------------------- -->
+
+<!-- ------------------------------------dark mode----------------------------------------------- -->
+    
+
+    <script src="/static/js/chart.js"></script>
+    <script src="/static/js/scroll.js"></script>
+</body>
+</html>
