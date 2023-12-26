@@ -1,1 +1,1 @@
-# Minor-Project-
+This is a website made using django , html , css and js . This wesbite helps user(business) to visulaize the data (uploaded by user) , help understand which are fast moving goods and slow moving good in their business.
